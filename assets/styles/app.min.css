@@ -226,6 +226,14 @@
 }
 
 @media screen and (max-width: 761px) {
+
+    .info .contacts .footer
+    {
+        display: block; 
+        float: none; 
+        width: 100%;
+    }
+
     .header {
         height: 280px;
         position: relative
