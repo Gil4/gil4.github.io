@@ -29,12 +29,12 @@
     background: #131216;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 1280px;
-    height: 100%;
     width: 100%;
     position: relative
 }
@@ -173,45 +173,49 @@
     color: #ea9f1a;
     margin-top: 48px;
     padding-bottom: 70px;
+    width: 100%;
+}
+
+.contacts .container {
     display: flex;
     justify-content: space-around
 }
 
-.contacts .contacts__mail {
+.contacts .container .contacts__mail {
     font-size: 24px
 }
 
-.contacts .contacts__subscribe {
+.contacts .container .contacts__subscribe {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 20px
 }
 
-.contacts .contacts__subscribe .subscribe__button {
+.contacts .container .contacts__subscribe .subscribe__button {
     width: 80px;
     color: #ea9f1a;
     background: #382929;
     border: none;
     height: 24px;
-    margin-top: 8px;
+    margin-top: 3px;
     border-radius: 8px;
     transition: 0.2s
 }
 
-.contacts .contacts__subscribe .subscribe__button:hover {
+.contacts .container .contacts__subscribe .subscribe__button:hover {
     cursor: pointer;
     transition: 0.2s;
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5)
 }
 
-.contacts .contacts__subscribe .subscribe__input {
+.contacts .container .contacts__subscribe .subscribe__input {
     background: #382929;
     color: gray;
     border: none;
     border-radius: 3px;
     height: 24px;
-    margin: 5px 0;
+    margin: 8px 0;
     padding-left: 5px
 }
 
@@ -226,13 +230,6 @@
 }
 
 @media screen and (max-width: 761px) {
-
-    .info .contacts .footer
-    {
-        display: block; 
-        float: none; 
-        width: 100%;
-    }
 
     .header {
         height: 280px;
@@ -273,7 +270,7 @@
         font-family: 'cooper';
         left: 110px;
         color: #fff8e6;
-        font-size: 32px
+        font-size: 29px
     }
     .info {
         padding-top: 32px
@@ -291,21 +288,25 @@
         height: 170px
     }
     .info .info__description {
-        width: 90%;
         font-size: 14px
     }
     .contacts {
+        display:flex;
+        justify-content: center;
+    }
+    .contacts .container {
         flex-direction: column;
         align-items: center;
-        width: 256px
+        width: 256px;
+        min-height: 146px;
     }
-    .contacts .contacts__mail {
+    .contacts .container .contacts__mail {
         font-size: 16px;
         display: inline-flex;
         justify-content: space-between;
         width: 100%
     }
-    .contacts .contacts__subscribe {
+    .contacts .container .contacts__subscribe {
         padding-top: 10px;
         width: 100%;
         font-size: 16px
@@ -327,7 +328,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #ea9f1a;
+    color: #d28f17;
 }
 
 /* selected link */
