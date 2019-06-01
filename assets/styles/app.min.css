@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lunchtype'
+    font-family: 'AlteHaasGroteskRegular';
+    letter-spacing: 1px;
 }
 
 @font-face {
@@ -21,6 +22,20 @@
 @font-face {
     font-family: 'cooper';
     src: url("../fonts/cooper.ttf") format("ttf"), url("../fonts/cooper.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AlteHaasGroteskRegular';
+    src: url("../fonts/AlteHaasGroteskRegular.ttf") format("ttf"), url("../fonts/AlteHaasGroteskRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Baloo';
+    src: url("../fonts/BalooTamma-Regular.ttf") format("ttf"), url("../fonts/BalooTamma-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
@@ -126,11 +141,11 @@
 
 .header .title {
     position: absolute;
-    bottom: 24px;
-    font-family: 'cooper';
+    bottom: 4px;
+    font-family: 'Baloo';
     left: 160px;
     color: #fff8e6;
-    font-size: 40px
+    font-size: 44px
 }
 
 .info {
@@ -148,11 +163,14 @@
 
 .info .info__header {
     font-size: 32px;
-    font-family: 'centabel'
+    font-family: 'centabel';
+    color: #aab2bd;
 }
 
 .info .info__title {
-    padding: 20px 0 10px 0
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    font-family: 'centabel';
 }
 
 .info .info__description {
@@ -161,11 +179,11 @@
 }
 
 .info .item__list {
-    padding-left: 20px
+    padding: 0 10px 30px 10px;
 }
 
 .info .item__list .info__description-item {
-    font-family: 'Lunchtype';
+    font-family: 'AlteHaasGroteskRegular';
     padding: 8px 0
 }
 
@@ -221,12 +239,59 @@
 
 .footer {
     text-align: center;
-    height: 40px;
-    line-height: 40px
+    height: 100px;
+    line-height: 25px
 }
 
 .footer .footer__title {
     color: rgba(234, 159, 26, 0.5)
+}
+
+.vitrail_info {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+}
+
+.vitrail_title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.vitrail_gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    max-width: 444px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.vitrail_buttons {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+
+.store_button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ios {
+    height: 50px;
+}
+
+#android {
+    height: 50px;
+}
+
+.itch_widget {
+    width: 560px;
 }
 
 @media screen and (max-width: 761px) {
@@ -312,8 +377,16 @@
         font-size: 16px
     }
     .footer {
-        font-size: 12px
+        font-size: 12px;
+        height: 72px;
+        line-height: 15px
     }
+
+
+    .itch_widget {
+        width: 216px;
+    }
+
 }
 
 /* unvisited link */
