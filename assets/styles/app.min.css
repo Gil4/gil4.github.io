@@ -122,6 +122,7 @@
 .header .logo__wrap .logo:before {
     content: '';
     position: absolute;
+    background: #abb3be;
     border: 6px solid #abb3be;
     border-radius: 2px;
     top: 60%;
@@ -132,6 +133,7 @@
 .header .logo__wrap .logo:after {
     content: '';
     position: absolute;
+    background: #abb3be;
     top: 60%;
     width: calc(1280px - 164px);
     left: 106px;
@@ -388,6 +390,38 @@
         width: 216px;
     }
 
+}
+
+/* unvisited link */
+.inlinelink {
+    font-family: 'centabel';
+    color: #ea9f1a;
+    border-bottom: 1px solid currentColor; 
+    text-decoration: none;
+}
+
+/* visited link */
+.inlinelink {
+    font-family: 'centabel';
+    color: #ea9f1a;
+    border-bottom: 1px solid currentColor; 
+    text-decoration: none;
+}
+
+/* mouse over link */
+.inlinelink {
+    font-family: 'centabel';
+    color: #d28f17;
+    border-bottom: 1px solid currentColor; 
+    text-decoration: none;
+}
+
+/* selected link */
+.inlinelink {
+    font-family: 'centabel';
+    color: #ea9f1a;
+    border-bottom: 1px solid currentColor;
+    text-decoration: none;
 }
 
 /* unvisited link */
